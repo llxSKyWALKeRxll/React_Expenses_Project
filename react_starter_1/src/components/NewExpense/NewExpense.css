@@ -1,0 +1,72 @@
+.expense-ui {
+    background-color: rgb(224, 246, 250);
+    display: block;
+    margin: 2rem auto;
+    width: 20rem;
+    padding: 0.75rem;
+    cursor: pointer;
+}
+
+/* @keyframes fadeIn {
+    from {
+      transform: translateX(250px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  } */
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.expense-ui:hover,
+.expense-ui:active {
+    background-color: rgb(161, 241, 255);
+    border-color: black;
+  }
+
+.new-expense {
+    animation: fadeIn 1s ease-out backwards;
+    /* background-color: rgb(224, 246, 250); */
+    background-color: #9dc9d4;
+    padding: 1rem;
+    margin: 2rem auto;
+    width: 50rem;
+    max-width: 95%;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+  }
+  
+  .new-expense button {
+    font: inherit;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border: 1px solid black;
+    background-color: #e4caca;
+    color: black;
+    border-radius: 12px;
+    margin-right: 1rem;
+    font-weight: bold;
+  }
+  
+  .new-expense button:hover,
+  .new-expense button:active {
+    background-color: #e2aaaa;
+    border-color: black;
+  }
+  
+  .new-expense button.alternative {
+    color: #220131;
+    border-color: transparent;
+    background-color: transparent;
+  }
+  
+  .new-expense button.alternative:hover,
+  .new-expense button.alternative:active {
+    background-color: #ddb3f8;
+  }
